@@ -8,22 +8,16 @@ int main(){
     cin>>g;
     cout<<"num 3"<<endl ;
     cin>>h;
-    if (f>g){
-        if (f>h){
-            cout<< f<< " is the greatest.";
-        }
-        else{
-            cout<<h <<" is the greatest.";
-        }
-
-    }
-    else{
-        if(g>h){
-            cout<< g <<" is greatest.";
+    if (f>g && f>h){
         
-        }
-        else {
-            cout<< h<< " is greatest.";
-        }
+        cout<< f<< " is the greatest.";
+    }
+        
+    else if(h>f && h>g){
+        cout<<h<<" is the greatest.";
+    }
+        
+    else{
+        cout<< g <<" is greatest.";
     }
 }
